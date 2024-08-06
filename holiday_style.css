@@ -1,0 +1,83 @@
+
+/* Body Font import*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* Heading Font import */
+@import url('https://fonts.googleapis.com/css?family=Londrina+Solid&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.781);
+    font-weight: 400;
+    padding: 30px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto;
+    column-gap: 5px;
+    row-gap: 5px;
+
+    grid-template-areas: 
+    "banner banner"
+    "nav main"
+    "footer footer"
+    ;
+
+}
+
+/* Common code area */
+.common{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Grid areas */
+
+.banner { grid-area: banner;
+    background-color: #7acbec;
+
+    /* allow us to center content vertically */
+    display: flex;
+    align-items: center;
+
+}
+    
+.nav { grid-area: nav;
+    background-color: #4cdbc4;}
+
+.main { grid-area: main;
+    background-color: #f7e6ba;}
+
+.footer { grid-area: footer;
+    background-color: #7acbec;
+    text-align: right;}
+
+.logo{
+    padding: 10px;
+    float: left;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 20px;
+    }
+
+    /* Text Styling (for headings) */
+    h1 {
+        font-family: 'Londrina Solid', sans-serif;
+        font-size: 300%;
+    }
+
+/* Set dimension of images for results pages below */
+.holiday-illustration{
+    max-width: 150px;
+    height: auto;
+    float: left;
+    padding-right: 20px;
+}
+
+.results {
+    padding: 20px;
+    background-color: #fefefe;
+    min-height: 150px;
+}
